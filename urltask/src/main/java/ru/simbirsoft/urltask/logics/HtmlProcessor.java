@@ -29,7 +29,7 @@ public class HtmlProcessor extends UrlProcessor{
         } catch (Exception e) {
             log.error(e);
         }
-        return Optional.of(processWords);
+        return Optional.ofNullable(processWords);
     }
 
     @Override
